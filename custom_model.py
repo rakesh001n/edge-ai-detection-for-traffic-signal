@@ -85,7 +85,7 @@ def main():
     #        model = YOLO("yolo11n.pt")
     #else:
     print("Loading optimized NCNN model...")
-    model = YOLO("yolo11n.pt", task='detect')
+    model = YOLO(model_path, task='detect')
 
     # Dynamically get class IDs from the model's names to avoid hardcoding errors
     VEHICLE_CLASS_NAMES = ['car', 'motorcycle', 'bus', 'truck', 'vehicle', 'auto']
