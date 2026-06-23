@@ -1,16 +1,41 @@
-# Project Title
-A brief, clear description of what your project does and why it exists.
+# Smart Traffic Monitoring using Edge Computing
+Real-Time Vehicle & Pedestrian Detection via Edge AI.
+This project presents the design and implementation of a Smart Traffic Monitoring System using Edge Computing for real-time vehicle and pedestrian detection. The system processes video streams locally on an edge device using YOLO-based deep learning models, significantly reducing latency, bandwidth consumption, and privacy risks compared to traditional cloud-based approaches.
+The project evaluates the effectiveness of Edge Computing for intelligent transportation systems by monitoring traffic conditions, detecting vehicles and pedestrians, measuring inference performance, and analyzing resource utilization. A custom object detection model trained using the IITM HETRA traffic dataset was also developed and converted into NCNN format for optimized deployment on Raspberry Pi devices.
+
+
 
 ## Features
-* Feature item one
-* Feature item two
+- Real-Time Vehicle Detection
+-	Real-Time Pedestrian Detection
+-	YOLO-Based Edge AI Inference
+-	Custom NCNN Traffic Detection Model
+-	FPS Monitoring
+-	CPU Usage Monitoring
+-	Temperature Monitoring
+-	Traffic Statistics Generation
+-	Reduced Network Dependency
+-	Enhanced Privacy Preservation
 
+
+## Edge vs Cloud Comparison
+
+| Parameter | Cloud Computing | Edge Computing |
+|------------|------------------|-----------------|
+| Latency | High | Low |
+| Bandwidth Usage | High | Low |
+| Privacy | Moderate | High |
+| Internet Dependency | Required | Optional |
+| Real-Time Response | Moderate | Excellent |
+| Data Transmission | Continuous | Minimal |
+| Infrastructure Cost | High | Lower |
 ## Installation
 Provide clear steps to set up the environment locally:
 ```bash
 git clone https://github.com/rakesh001n/edge-ai-detection-for-traffic-signal
 pip instal ultralytics==8.3.187
 pip install psutil==7.0.0
+pip install opencv-python==4.10.0.84
 ```
 
 ## Usage
