@@ -1,0 +1,10 @@
+path: /kaggle/input/datasets/rockybhai001n/iitm-traffic-surveillance-dataset/Dataset_YOLO
+train: images/train
+val: images/val
+nc: 5
+names:
+- Car
+- Person
+- Bus
+- Truck
+- Motorcycle
