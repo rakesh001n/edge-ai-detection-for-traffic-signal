@@ -56,8 +56,10 @@ edit line 88 at ```custom_model.py``` file to the below code :
 ```code 
 model = YOLO("yolo11n.pt", task='detect')
 ```
-
-
+if using custom ncnn model use :
+```code
+model = YOLO(model_path, task='detect')
+```
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
